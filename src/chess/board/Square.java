@@ -112,7 +112,7 @@ public class Square {
     public void actionListener() {
         square.addActionListener(new ActionListener() {
             @Override
-            public Piece actionPerformed(ActionEvent e) {
+            public void actionPerformed(ActionEvent e) {
 
             }
         });
