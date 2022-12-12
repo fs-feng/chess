@@ -46,18 +46,19 @@ public class ChessBoard {
         }
     }
 
-    //create the pieces and
+    //create the pieces
     public void fillPieces(Boolean playerIsWhite) {
         pieces = new Pieces();
         pieces.createPieces(chessField.getChessField(), playerIsWhite);
     }
 
-
+    //create new JPanel with Gridlayout;
     public void chessBoardGrid() {
         chessBoard = new JPanel(new GridLayout(0,9));
         chessField = new ChessField();
     }
 
+    //create the Chessfield out of Squares
     public void fillChessField() {
         for (int y = 0; y < chessField.getChessField().length; y++) {
             for (int x = 0; x < chessField.getChessField()[y].length; x++) {
@@ -72,6 +73,7 @@ public class ChessBoard {
         }
     }
 
+    //first column of the Grid with the alphabet
     public void createBoardLetters() {
         for (char text : " ABCDEFGH".toCharArray()) {
             JLabel label = new JLabel(String.valueOf(text), SwingConstants.CENTER);

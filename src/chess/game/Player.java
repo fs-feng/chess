@@ -4,7 +4,8 @@ import chess.board.*;
 import chess.pieces.Piece;
 import chess.pieces.PieceColor;
 
-public abstract class Player {
+public class Player {
+
     private boolean firstMove;
     private PieceColor color;
     private Piece selectedPiece;

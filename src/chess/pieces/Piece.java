@@ -47,7 +47,10 @@ public abstract class Piece {
 
     //move the chessPiece
     public void move() {
-
+        System.out.println("Test");
     }
 
+    public void eat() {
+
+    }
 }

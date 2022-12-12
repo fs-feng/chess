@@ -14,15 +14,18 @@ public class Toolbar {
     private JButton clearGame;
 
 
+    //getter
     public JToolBar getToolbar() {
         return toolbar;
     }
 
+    //constructor
     public Toolbar() {
         toolbar = new JToolBar();
         toolbar.setLayout(new GridLayout(3,1));
     }
 
+    //create the buttons for the toolbar with action listeners
     public void fillToolbar(ChessBoard chessBoard) {
         newGameBlack = new JButton("Play as black");
         newGameWhite = new JButton("Play as white");
